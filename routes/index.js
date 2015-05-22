@@ -2,15 +2,39 @@ var express = require('express');
 var router = express.Router();
 var app = require('express')();
 var request = require('request');
+var crawlerUserAgents = [
+  'googlebot',
+  'yahoo',
+  'bingbot',
+  'baiduspider',
+  'facebookexternalhit',
+  'twitterbot',
+  'rogerbot',
+  'linkedinbot',
+  'embedly',
+  'quora link preview',
+  'showyoubot',
+  'outbrain',
+  'pinterest',
+  'developers.google.com/+/web/snippet',
+  'slackbot',
+  'vkShare',
+  'W3C_Validator',
+  'curl/7.37.1'
+];
 
 var needRender = function (req) {
-  console.log(req.headers['user-agent']);
-  return false;
-}
+  if (crawlerUserAgents.indexOf(req.headers['user-agent']) == -1) {
+    return false;
+  } else {
+    return true
+  }
+};
 
-router.get('/', function(req, res, next) {  
+router.get('/', function(req, res, next) {
   if (needRender(req)) {
-    request('http://localhost:3000/render?url=' + req.originalUrl, function (error, response, body) {
+    var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+    request('http://localhost:3000/render?url=' + fullUrl, function (error, response, body) {
       res.send(body);
     });
   } else {
