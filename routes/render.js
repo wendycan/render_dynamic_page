@@ -8,7 +8,6 @@ router.get('/', function(req, res, next) {
     ph.createPage(function (page) {
       console.log(req.query.url);
       page.open(req.query.url, function (status) {
-        page.render('t.png');
         page.evaluate(function(){
           var result = document.getElementsByTagName('html')[0].outerHTML;
           result = result.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "");
