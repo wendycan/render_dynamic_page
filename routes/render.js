@@ -9,10 +9,11 @@ router.get('/', function(req, res, next) {
     ph.createPage(function (page) {
       page.open(req.query.url, function (status) {
         page.evaluate(function(){
-          return document.body.innerHTML;
+          var result = document.getElementsByTagName('html')[0].outerHTML;
+          result = result.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "");
+          result= result.replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, "");
         }, function(result){
-          res.send(result.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi
-, ""));          
+          res.send(result));
         });
         // console.log(page.plainText);
       });
