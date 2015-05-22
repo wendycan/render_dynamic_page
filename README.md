@@ -27,3 +27,7 @@ Under this demo,if you type above shell commond,you can get something like below
 ```
 <html><head><title>Express</title><link rel="stylesheet" href="/stylesheets/style.css"></head><body><div id="content"><h4 data-reactid=".0">React features!</h4></div></body></html>
 ```
+
+## Others
+
+There is a project named [prerender](https://github.com/prerender/prerender).Prerender is a node server from prerender.io that uses phantomjs to create static HTML out of a javascript page. 

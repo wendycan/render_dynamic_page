@@ -6,7 +6,6 @@ var phantom = require('phantom');
 router.get('/', function(req, res, next) {
   phantom.create(function (ph) {
     ph.createPage(function (page) {
-      console.log(req.query.url);
       page.open(req.query.url, function (status) {
         page.evaluate(function(){
           var result = document.getElementsByTagName('html')[0].outerHTML;
