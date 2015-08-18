@@ -13,7 +13,7 @@ Make sure you have installed follow items.
 
 ## Run
 
-```sh
+``` sh
   $ cd MY_PROJECT
   $ npm install
   $ npm start
@@ -45,6 +45,19 @@ You can get static HTML for any daymic page just by passing a url to render page
 $ curl http://localhost:3000/render?url=http://localhost:8000/demo.html
 ```
 
+
+## Network Monitoring
+
+PhantomJS also can be used to monitor network.This is a demo.To run:
+
+``` sh
+  $ npm test
+```
+
+This will exports the network traffic in HAR format. Use HAR viewer to visualize the result and get the waterfall diagram.
+
+![network monitoring](./public/images/network.png)
+
 ## Others
 
-There is a project named [prerender](https://github.com/prerender/prerender).Prerender is a node server from prerender.io that uses phantomjs to create static HTML out of a javascript page. 
+There is a project named [prerender](https://github.com/prerender/prerender).Prerender is a node server from prerender.io that uses phantomjs to create static HTML out of a javascript page.
