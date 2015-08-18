@@ -11,7 +11,6 @@ router.get('/', function(req, res, next) {
         page.evaluate(function(){
           var result = document.getElementsByTagName('html')[0].outerHTML;
           result = result.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "");
-          result = result.replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, "");
           return result;
         }, function(result){
           res.send(result);
