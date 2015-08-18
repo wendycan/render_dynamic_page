@@ -1,8 +1,14 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background: #309161 url(/images/pattern.png) repeat scroll top left
 }
 
 a {
   color: #00B7FF;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
 }

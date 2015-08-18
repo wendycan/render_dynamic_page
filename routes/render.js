@@ -7,6 +7,7 @@ router.get('/', function(req, res, next) {
   phantom.create(function (ph) {
     ph.createPage(function (page) {
       page.open(req.query.url, function (status) {
+        page.render('demo.png');
         page.evaluate(function(){
           var result = document.getElementsByTagName('html')[0].outerHTML;
           result = result.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "");
