@@ -51,7 +51,7 @@ $ curl http://localhost:3000/render?url=http://localhost:8000/demo.html
 PhantomJS also can be used to monitor network.This is a demo.To run:
 
 ``` sh
-  $ npm test
+  $ phantomjs ./public/javascripts/netsniff.js http://localhost:3000 > data.txt
 ```
 
 This will exports the network traffic in HAR format. Use HAR viewer to visualize the result and get the waterfall diagram.

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "phantomjs ./public/javascripts/netsniff.js http://localhost:3000 > data.txt"
+    "test": "casperjs test ./test/index_spec.js"
   },
   "dependencies": {
     "body-parser": "~1.12.4",
