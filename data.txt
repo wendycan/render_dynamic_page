@@ -7,18 +7,18 @@
         },
         "pages": [
             {
-                "startedDateTime": "2015-08-26T08:34:14.714Z",
+                "startedDateTime": "2015-09-24T08:47:26.074Z",
                 "id": "http://localhost:3000",
                 "title": "Express",
                 "pageTimings": {
-                    "onLoad": 48
+                    "onLoad": 60
                 }
             }
         ],
         "entries": [
             {
-                "startedDateTime": "2015-08-26T08:34:14.699Z",
-                "time": 19,
+                "startedDateTime": "2015-09-24T08:47:26.058Z",
+                "time": 31,
                 "request": {
                     "method": "GET",
                     "url": "http://localhost:3000/",
@@ -62,7 +62,7 @@
                         },
                         {
                             "name": "Date",
-                            "value": "Wed, 26 Aug 2015 08:34:14 GMT"
+                            "value": "Thu, 24 Sep 2015 08:47:26 GMT"
                         },
                         {
                             "name": "Connection",
@@ -83,15 +83,15 @@
                     "dns": -1,
                     "connect": -1,
                     "send": 0,
-                    "wait": 18,
-                    "receive": 1,
+                    "wait": 31,
+                    "receive": 0,
                     "ssl": -1
                 },
                 "pageref": "http://localhost:3000"
             },
             {
-                "startedDateTime": "2015-08-26T08:34:14.719Z",
-                "time": 4,
+                "startedDateTime": "2015-09-24T08:47:26.091Z",
+                "time": 6,
                 "request": {
                     "method": "GET",
                     "url": "http://localhost:3000/stylesheets/style.css",
@@ -131,7 +131,7 @@
                         },
                         {
                             "name": "Date",
-                            "value": "Wed, 26 Aug 2015 08:34:14 GMT"
+                            "value": "Thu, 24 Sep 2015 08:47:26 GMT"
                         },
                         {
                             "name": "Cache-Control",
@@ -172,15 +172,15 @@
                     "dns": -1,
                     "connect": -1,
                     "send": 0,
-                    "wait": 4,
+                    "wait": 6,
                     "receive": 0,
                     "ssl": -1
                 },
                 "pageref": "http://localhost:3000"
             },
             {
-                "startedDateTime": "2015-08-26T08:34:14.720Z",
-                "time": 5,
+                "startedDateTime": "2015-09-24T08:47:26.092Z",
+                "time": 8,
                 "request": {
                     "method": "GET",
                     "url": "http://localhost:3000/javascripts/polyfill.js",
@@ -220,7 +220,7 @@
                         },
                         {
                             "name": "Date",
-                            "value": "Wed, 26 Aug 2015 08:34:14 GMT"
+                            "value": "Thu, 24 Sep 2015 08:47:26 GMT"
                         },
                         {
                             "name": "Cache-Control",
@@ -228,11 +228,11 @@
                         },
                         {
                             "name": "Last-Modified",
-                            "value": "Fri, 22 May 2015 03:48:11 GMT"
+                            "value": "Wed, 26 Aug 2015 08:36:09 GMT"
                         },
                         {
                             "name": "ETag",
-                            "value": "W/\"450-4031010795\""
+                            "value": "W/\"450-2554007647\""
                         },
                         {
                             "name": "Content-Type",
@@ -261,15 +261,15 @@
                     "dns": -1,
                     "connect": -1,
                     "send": 0,
-                    "wait": 4,
-                    "receive": 1,
+                    "wait": 8,
+                    "receive": 0,
                     "ssl": -1
                 },
                 "pageref": "http://localhost:3000"
             },
             {
-                "startedDateTime": "2015-08-26T08:34:14.720Z",
-                "time": 8,
+                "startedDateTime": "2015-09-24T08:47:26.092Z",
+                "time": 12,
                 "request": {
                     "method": "GET",
                     "url": "http://localhost:3000/javascripts/react.js",
@@ -309,7 +309,7 @@
                         },
                         {
                             "name": "Date",
-                            "value": "Wed, 26 Aug 2015 08:34:14 GMT"
+                            "value": "Thu, 24 Sep 2015 08:47:26 GMT"
                         },
                         {
                             "name": "Cache-Control",
@@ -338,9 +338,9 @@
                     ],
                     "redirectURL": "",
                     "headersSize": -1,
-                    "bodySize": 123835,
+                    "bodySize": 54344,
                     "content": {
-                        "size": 123835,
+                        "size": 54344,
                         "mimeType": "application/javascript"
                     }
                 },
@@ -350,15 +350,15 @@
                     "dns": -1,
                     "connect": -1,
                     "send": 0,
-                    "wait": 6,
-                    "receive": 2,
+                    "wait": 8,
+                    "receive": 4,
                     "ssl": -1
                 },
                 "pageref": "http://localhost:3000"
             },
             {
-                "startedDateTime": "2015-08-26T08:34:14.720Z",
-                "time": 6,
+                "startedDateTime": "2015-09-24T08:47:26.092Z",
+                "time": 9,
                 "request": {
                     "method": "GET",
                     "url": "http://localhost:3000/javascripts/build/main.js",
@@ -398,7 +398,7 @@
                         },
                         {
                             "name": "Date",
-                            "value": "Wed, 26 Aug 2015 08:34:14 GMT"
+                            "value": "Thu, 24 Sep 2015 08:47:26 GMT"
                         },
                         {
                             "name": "Cache-Control",
@@ -439,15 +439,15 @@
                     "dns": -1,
                     "connect": -1,
                     "send": 0,
-                    "wait": 5,
-                    "receive": 1,
+                    "wait": 9,
+                    "receive": 0,
                     "ssl": -1
                 },
                 "pageref": "http://localhost:3000"
             },
             {
-                "startedDateTime": "2015-08-26T08:34:14.723Z",
-                "time": 4,
+                "startedDateTime": "2015-09-24T08:47:26.097Z",
+                "time": 5,
                 "request": {
                     "method": "GET",
                     "url": "http://localhost:3000/images/pattern.png",
@@ -487,7 +487,7 @@
                         },
                         {
                             "name": "Date",
-                            "value": "Wed, 26 Aug 2015 08:34:14 GMT"
+                            "value": "Thu, 24 Sep 2015 08:47:26 GMT"
                         },
                         {
                             "name": "Cache-Control",
@@ -528,8 +528,8 @@
                     "dns": -1,
                     "connect": -1,
                     "send": 0,
-                    "wait": 3,
-                    "receive": 1,
+                    "wait": 5,
+                    "receive": 0,
                     "ssl": -1
                 },
                 "pageref": "http://localhost:3000"
